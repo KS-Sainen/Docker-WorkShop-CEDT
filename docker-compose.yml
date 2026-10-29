@@ -29,7 +29,7 @@ services:
         volumes:
           - pgdata:/var/lib/postgresql/data
           - ./app/db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
-    #       there might be something here ?
+    #       there might be something here ? (binding)
 
     # TODO(step-5f): set Postgres env vars so the DB and user are created on startup.
         environment:
